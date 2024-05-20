@@ -16,7 +16,7 @@ export default function App() {
     <>
    <Navbar activeFunction ={handlePage} activepage={activepage} Imgsrc = {"https://iili.io/JP6HmlV.md.jpg"}/>
    {activepage=="Welcome"?<Homepage/>:undefined}
-   {activepage=="Story"?<Story/>:undefined}
+   {activepage=="Story"?<Story activeFunction ={handlePage} activePage={activepage}/>:undefined}
    {activepage=="Albums"?<Albums/>:undefined}
    {activepage=="About"?<About/>:undefined}
     </>

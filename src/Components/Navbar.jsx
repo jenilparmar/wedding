@@ -13,17 +13,7 @@ export default function Navbar({ Imgsrc ,activeFunction ,activepage}) {
     root.style.backgroundImage=`url(${Imgsrc})`;
     // root.style.backgroundColor="red"
   }
-  else if(activepage =="Story"){
-    // root.style.backgroundImage=`url(${Imgsrc})`;
-    // root.style.display="cyan"
-  }
-  else if(activepage =="Albums"){
-    // root.style.backgroundImage=`url(${Imgsrc})`;
-    root.style.backgroundColor="cyan"
-  }else if(activepage =="About"){
-    // root.style.backgroundImage=`url(${Imgsrc})`;
-    root.style.backgroundColor="pink"
-  }
+
   return (
     <center>
       <div className="photo w-11/12 font-bold h-fit fixed mx-10 my-5 bottom-0">
