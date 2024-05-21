@@ -1,6 +1,6 @@
-import React from 'react'
-import Ceremony from './Ceremony'
-
+import React from "react";
+import Ceremony from "./Ceremony";
+  // "" 22
 export default function About() {
   return (
     <div>
@@ -11,9 +11,12 @@ export default function About() {
       varmala 
       kanyadan
       Reception  */}
-      <div className="container5 w-screen h-screen bg-purple-700">
-      <Ceremony title={"Sangeet"}/>
+      <div className="container5 w-screen h-fit  bg-purple-700">
+        <Ceremony title={"Sangeet"} flag={true} />
+        <Ceremony title={"Mandap"} flag={false} />
+        <Ceremony title={"Barat"} flag={true} />
+        <Ceremony title={"Varmala"} flag={false} />
       </div>
     </div>
-  )
+  );
 }

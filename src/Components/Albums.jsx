@@ -3,12 +3,12 @@ import React, { useState } from "react";
 export default function Albums() {
   const photoCollection = {
     1: "https://wallpapercave.com/wp/wp8987701.jpg",
-    2: "https://wallpaperset.com/w/full/4/9/2/93352.jpg",
-    3: "https://wallpapercrafter.com/desktop6/1517030-human-person-hug-dating-couple-sainte-anne-runion.jpg",
-    4: "https://wallpapers.com/images/featured/couple-2ub8dk6cccwitl9v.jpg",
+    2: "https://wallpapers.com/images/featured/couple-2ub8dk6cccwitl9v.jpg",
+    3: "https://wallpaperset.com/w/full/4/9/2/93352.jpg",
+    4: "https://wallpapercrafter.com/desktop6/1517030-human-person-hug-dating-couple-sainte-anne-runion.jpg",
   };
   const numberOfPhotos = Object.keys(photoCollection).length;
-
+  
   const [photo, setPhoto] = useState(1);
 
   function handleClick(photoNumber) {
@@ -20,6 +20,7 @@ export default function Albums() {
       setPhoto(photoNumber);
     }
   }
+ 
 
   return (
     <>

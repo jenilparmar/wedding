@@ -16,7 +16,7 @@ export default function Navbar({ Imgsrc ,activeFunction ,activepage}) {
 
   return (
     <center>
-      <div className="z-10 photo w-11/12 font-bold h-fit fixed mx-10 my-5 bottom-0">
+      <div className=" z-10 photo w-11/12 font-bold h-fit fixed mx-10 my-5 bottom-0">
         <ul className="z-10 flex flex-row gap-10 justify-center text-black">
           <li className={`z-10  text-sm cursor-pointer text-black ${activepage=="Welcome"?"w-20 rounded-3xl gradient":""} h-6`} onClick={handleClick("Welcome")}>𝒲𝑒𝓁𝒸𝑜𝓂𝑒</li>
           <li className={`z-10 text-sm cursor-pointer text-black ${activepage=="Story"?"w-20 rounded-3xl gradient":""}  h-6`} onClick={handleClick("Story")}>𝒮𝓉𝑜𝓇𝓎</li>
