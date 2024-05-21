@@ -47,7 +47,7 @@ export default function SubStory({ cartoonNumber, title, story }) {
             id={photoClass}></div>
         </div>
         <div
-          className={`bg-contain pos bg-center bg-no-repeat h-44 w-44 relative left-7 top-0 ${photoClass}`}></div>
+          className={`n bg-contain pos bg-center bg-no-repeat h-44 w-44 relative left-7 top-0 ${photoClass}`}></div>
       </div>
       <div className="flex flex-col w-80 nas h-80 gap-1 relative left-64 bottom-56">
         <p className="title font-medium text-3xl">{title}</p>

@@ -2,13 +2,28 @@ import React, { useState } from "react";
 
 export default function Albums() {
   const photoCollection = {
-    1: "https://wallpapercave.com/wp/wp8987701.jpg",
-    2: "https://wallpapers.com/images/featured/couple-2ub8dk6cccwitl9v.jpg",
-    3: "https://wallpaperset.com/w/full/4/9/2/93352.jpg",
-    4: "https://wallpapercrafter.com/desktop6/1517030-human-person-hug-dating-couple-sainte-anne-runion.jpg",
+    1: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-1.jpeg",
+    2: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Couple-Poses-Arjun-kamath-3.jpeg",
+    3: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/04/Indian-Prewedding-Couple-Poses-Arjun-kamath-31.jpeg",
+    4: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Couple-Poses-Arjun-kamath-5.jpeg",
+    5: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-11.jpeg",
+
+    6: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-17.jpeg",
+
+    7: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-20.jpeg",
+
+    8: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-28.jpeg",
+
+    9: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-29.jpeg",
+
+    10: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-30.jpeg",
+    11: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-22.jpeg",
+    12: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-9.jpeg",
+    13: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/04/Indian-Prewedding-Couple-Poses-Arjun-kamath-32.jpeg",
+    14: "https://kamatharjun.b-cdn.net/wp-content/uploads/2021/03/Indian-Prewedding-Photography-Arjun-kamath-21.jpeg",
   };
   const numberOfPhotos = Object.keys(photoCollection).length;
-  
+
   const [photo, setPhoto] = useState(1);
 
   function handleClick(photoNumber) {
@@ -20,48 +35,28 @@ export default function Albums() {
       setPhoto(photoNumber);
     }
   }
- 
 
   return (
     <>
       <center>
-        <div className="slider w-screen h-screen bg-gray-700">
+        <div className="slider w-screen h-screen bg-black">
           <div className="photoslider w-screen h-screen">
             <img
               srcSet={photoCollection[photo]}
               alt=""
-              className=" w-screen h-screen object-cover"
-            
+              className=" w-screen h-screen object-contain"
             />
           </div>
-          <div className="container2 flex flex-row gap-3">
-            <div className="photos w-24 bg-black h-32 rounded-md"> <img
-              srcSet={photoCollection[((photo+1)%numberOfPhotos)]}
-              alt=""
-              className="w-24 h-32 object-cover"
-            /></div>
-            <div className="photos w-24 bg-black h-32 rounded-md"> <img
-              srcSet={photoCollection[(photo+2)%numberOfPhotos]}
-              alt=""
-              className="w-24 h-32 object-cover"
-            /></div>
-            <div className="photos w-24 bg-black h-32 rounded-md"> <img
-              srcSet={photoCollection[(photo+3)%numberOfPhotos]}
-              alt=""
-              className="w-24 h-32 object-cover"
-            /></div>
-          </div>
+          
           <div className="control flex flex-row gap-6 w-28 h-32">
             <div
               className="dir prev h-10 w-10 flex justify-center rounded-bl-full"
-              onClick={() => handleClick(photo - 1)}
-            >
+              onClick={() => handleClick(photo - 1)}>
               <i className="fa-solid text-2xl self-center fa-backward text-white"></i>
             </div>
             <div
               className="dir next h-10 w-10 flex justify-center rounded-bl-full"
-              onClick={() => handleClick(photo + 1)}
-            >
+              onClick={() => handleClick(photo + 1)}>
               <i className="fa-solid text-2xl self-center fa-forward text-white"></i>
             </div>
           </div>
