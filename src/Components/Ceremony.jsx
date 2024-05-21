@@ -22,7 +22,7 @@ export default function Ceremony({title,date,time,flag}) {
         <div className={`${bgc}`}>
            <h1 className="text-8xl font-medium relative left-5 title2">{title}</h1>
             <div className="underline my-3"></div>
-            <img srcSet={iconCollection[title]} alt=""   className="drop-shadow w-40 h-40 icons "/>    
+            <img srcSet={iconCollection[title]} alt=""   className=" drop-shadow w-40 h-40 icons "/>    
             <div className="info text-left mx-6 text-lg font-semibold ">Date:- {date}
             <br />
             Time:- {time}</div>
